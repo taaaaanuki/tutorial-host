@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 320px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-left: 7%;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 80%;
+            padding: 8px 10px;
+            margin: 5px auto 0 auto;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            resize: vertical;
+            font-size: 14px;
+        }
+        textarea {
+            height: 80px;
+        }
+        button {
+            margin: 20px auto 0 auto;
+            display: block;
+            width: 80%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Form</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="class">Class</label>
+            <input type="text" id="class" name="class" required />
+
+            <label for="recipient">Recipient</label>
+            <input type="text" id="recipient" name="recipient" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
