@@ -42,14 +42,14 @@ const councilMembers = [
 const upcomingEvents = [
     {
         title: "Suryastra",
-        date: "24-10-27",
+        date: "2024-10-27",
         time: "7:00 AM - 11:00 AM",
         location: "Lapangan Utam SMAN 4 Cibinong",
         description: "Pemilihan Ketua Osis Periode 2024/2025"
     },
     {
         title: "Edufair 2025",
-        date: "25-01-11",
+        date: "2025-01-11",
         time: "7:00 AM - 3:00 PM",
         location: "Lapangan Utama & Aula SMAN 4 Cibinong",
         description: "Pameran Perguruan Tinggi Negeri & Swasta serta Kedinasan"
